@@ -1,0 +1,32 @@
+{
+  "name": "typescript-getting-started",
+  "version": "1.0.0",
+  "description": "A sample TypeScript app using Express",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/request": "^2.48.7",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "axios-oauth-1.0a": "^0.3.4",
+    "request": "^2.88.2"
+  },
+  "nodemonConfig": {
+    "ext": "ts",
+    "exec": "npm run build && npm start"
+  }
+}
